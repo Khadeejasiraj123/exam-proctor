@@ -9,7 +9,7 @@ const client = new Client({
 });
 
 client.connect()
-  .then(() => console.log("✅ Render DB Connected"))
-  .catch(err => console.error("❌ DB Error:", err));
+  .then(() => console.log("Render DB Connected"))
+  .catch(err => console.error("DB Error:", err));
 
 module.exports = client;
