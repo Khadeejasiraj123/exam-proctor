@@ -57,6 +57,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, "public")));
+app.use(express.static(path.join(__dirname, "../frontend")));
 
 const usersRouter = require("./routes/users");
 const testsRouter = require("./routes/tests");
@@ -103,6 +104,9 @@ app.use("/api/viewStudent", viewStudentRouter(db))
 app.use("/api/deleteUser", deleteUserRouter(db))
 app.use("/api/getTest", getTestRouter(db))
 
+app.get("*", (req, res) => {
+  res.sendFile(path.join(__dirname, "../frontend/index.html"));
+});
 server.listen(PORT, () => {
   console.log(`Example app listening on port ${PORT}`);
 });
