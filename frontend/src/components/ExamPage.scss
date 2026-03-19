@@ -1,0 +1,36 @@
+.exam-page{
+  padding: 0 1rem;
+
+  h1{
+    color: navy;
+  }
+
+  details{
+    // border: 1px solid black;
+    padding: 1rem; 
+    box-shadow: 2px 2px 4px #00000073;
+    border-radius: 4px;
+    margin-right: 1rem;
+
+    summary{
+      font-size: 1.2rem;
+      cursor: pointer;
+    }
+  }
+
+  &--wrapper{
+    display: flex;
+  }
+
+  &--left{
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &--right{
+    padding: 1rem;
+    flex-grow: 1;
+  }
+}

@@ -1,0 +1,101 @@
+.exam-primary{
+  height: 700px;
+  background-color: aliceblue;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 1rem;
+}
+
+/*************************
+     EXAM START MENU
+*************************/
+
+.start-menu{
+  h2{
+    padding: 1rem 0;
+    font-size: 2rem;
+  }
+
+  p{
+    font-size: 1.2rem;
+    padding: 2rem 0 1rem;
+    font-weight: 600;
+  }
+}
+
+// Had to override some MUI buttons
+.start-menu-btn{
+  background-color: coral !important;
+  transform: scale(1.2);
+  font-weight: 600 !important;
+
+  &:hover{
+    background-color: #f05620 !important;
+  }
+}
+
+.exam-questions{
+  padding: 1rem 0;
+}
+
+.exam-answers{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 1rem 0rem 3rem;
+
+  button{
+    width: 100%;
+    padding: 0.8rem;
+    margin: 0.2rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 1rem;
+  }
+  // button:hover{
+  //   // background-color: gainsboro;
+  // }
+
+  button:focus, button:active{
+    background-color: gold;
+    color: black;
+    font-weight: 600;
+  }
+}
+
+.exam-question-num{
+  font-size: 1.2rem;
+  text-align: left;
+  font-weight: 600;
+  color: grey;
+}
+
+.exam-next-btn, .exam-finish-btn{
+  width: 100%;
+  font-weight: 600 !important;
+}
+
+// End Screen
+
+.exam-final-percentage{
+  font-size: 3rem;
+  font-weight: 700;
+  color: #004d90;
+  margin-bottom: 1rem;
+}
+
+.exam-end-btns{
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+
+  .restart-btn{
+    margin-top: 1rem;
+  }
+}

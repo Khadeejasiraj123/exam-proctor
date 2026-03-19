@@ -1,0 +1,47 @@
+// ViewProctor.scss
+
+.view-proctor {
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+
+        th,
+        td {
+            border: 1px solid #ccc;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        tr:hover {
+            background-color: #ddd;
+        }
+    }
+
+    img {
+        width: 400px;
+    }
+
+    td button {
+        // Styles for the delete button inside table cells...
+        background-color: #ff0000; // Red background color
+        color: #ffffff; // White text color
+        border: none; // No border
+        padding: 8px 16px; // Padding
+        border-radius: 4px; // Rounded corners
+        cursor: pointer; // Show pointer on hover
+    }
+
+    td button:hover {
+        background-color: #cc0000; // Darker red on hover
+    }
+
+}

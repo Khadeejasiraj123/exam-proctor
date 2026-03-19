@@ -1,0 +1,32 @@
+.registration {
+  text-align: center;
+
+  h1 {
+    color: navy;
+  }
+
+  &--form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .MuiTextField-root {
+      margin-bottom: 1rem;
+    }
+  }
+
+  .mt-sm {
+    margin-top: 2rem;
+  }
+
+  .checkbox-wrapper {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+}
+
+input [type="file"] {
+  background-color: red;
+}

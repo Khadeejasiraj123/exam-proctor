@@ -1,0 +1,16 @@
+POST http://localhost:3005/api/addExam HTTP/1.1
+content-type: application/json
+
+{
+    "name": "sample",
+    "question": "wew",
+    "answer1":"aa",
+    "answer2":"asa",
+    "answer3":"aea",
+    "answer4":"ara",
+    "correct_answer":"aa"
+
+}
+
+###
+GET http://localhost:3005/api/getTest/1
